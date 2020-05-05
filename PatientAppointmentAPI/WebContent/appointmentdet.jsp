@@ -100,22 +100,20 @@ if (request.getParameter("AID") != null) {
           							
          						 	<input type="hidden" id="AID_form" name="AID"/>
 										
-									<div class="name">First name code</div>
+									<div class="name">First name </div>
 						
 									<input class="form-control" type="text" name="fName  " id="fName_form">
 					
-									<div class="name">Name</div>
+									<div class="name">Last Name</div>
 									
 									<input class="form-control" type="text" name="lName " id="lName_form">
 					
 
 						
-							<div class="name">NIC Number</div>
 							
-									<input class="form-control" type="text" name="PNIC" id="PNIC_form">
 								
 						
-							<div class="name">Phone Number</div>
+							<div class="name">Type</div>
 							
 											
 											 <select name="type" id="type_form" class="form-control">
@@ -127,18 +125,22 @@ if (request.getParameter("AID") != null) {
 	                        <option value="">Other Services</option>
 	                      </select>
 
-							<div class="name">Email</div>
+							<div class="name">Phone</div>
+							
+									<input class="form-control" type="number" name="phone" id="phone_form">
+
+							<div class="name">Date</div>
 							
 								
-							<input class="form-control" type="email" name="Email" id="Email_form">
+							<input class="form-control" type="date" name="date" id="date_form">
 							
 
-							<div class="name">Address</div>
-									<input class="form-control" type="text" name="Address" id="Address_form">
+							<div class="name">time</div>
+									<input class="form-control" type="time" name="time" id="time_form">
 					
 
 							<div class="name">Password</div>
-									<input class="form-control" type="password" name="Password" id="Password_form">
+									<input class="form-control" type="text" name="message" id="message_form">
 
 						<div>
 							<button class="update_btn btn-primary" type="submit"
