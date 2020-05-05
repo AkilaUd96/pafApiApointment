@@ -29,15 +29,15 @@ public class appointment {
 						return "Error while connecting to the database for inserting.";
 					}
 					// create a prepared statement
-					String query = " insert into appointment(fName,lName,type,phone,date,time, messege)"
-							+ " values (?, ?, ?, ?, ?, ?, ?)";
+					String query = " insert into appointment(AID,fName,lName,type,phone,date,time, messege)"
+							+ " values (?, ?, ?, ?, ?, ?, ?, +?)";
 					PreparedStatement preparedStmt = con.prepareStatement(query);
 					// binding values
 					preparedStmt.setInt(1, 0);
 					preparedStmt.setString(2, fName);
 					preparedStmt.setString(3, lName);
 					preparedStmt.setString(4, type);
-					preparedStmt.setString(5, phone);
+					preparedStmt.setInt(5, Integer.parseInt(phone));
 					preparedStmt.setString(6, date);
 					preparedStmt.setString(7, time);
 					preparedStmt.setString(8, messege);
@@ -118,7 +118,7 @@ public class appointment {
 					preparedStmt.setString(1, fName);
 					preparedStmt.setString(2, lName);
 					preparedStmt.setString(3, type);
-					preparedStmt.setString(4, phone);
+					preparedStmt.setInt(4, Integer.parseInt(phone));					
 					preparedStmt.setString(5, date);
 					preparedStmt.setString(6, time);
 					preparedStmt.setString(7, messege);

@@ -53,7 +53,7 @@ public class aRedirectUpdate extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 //		response.sendRedirect("adminHome.html");
-		System.out.println("test");
+		//System.out.println("test");
 			String AID=request.getParameter("AID_form");
 			String fName=request.getParameter("fName");
 			String lName=request.getParameter("lName");
@@ -70,7 +70,7 @@ public class aRedirectUpdate extends HttpServlet {
 					response.sendRedirect("appointmentdet.jsp");
 				}
 				// create a prepared statement
-				String query = "UPDATE appointment SET fName=?,lName=?,type=?,phone=?,date=?,time=?,message=?WHERE AID=?";
+				String query = "UPDATE appointment SET fName=?,lName=?,type=?,phone=?,date=?,time=?,message=? WHERE AID=?";
 				PreparedStatement preparedStmt = con.prepareStatement(query);
 				// binding values
 				
