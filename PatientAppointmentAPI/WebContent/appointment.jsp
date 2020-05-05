@@ -160,10 +160,10 @@
 		        		<h3>Free Consultation</h3>
 		    				<div class="">
 			    				<div class="form-group">
-			    					<input type="text" class="form-control" placeholder="First Name" name='fName'>
+			    					<input type="text" class="form-control" placeholder="First Name" name='fName' required>
 			    				</div>
 			    				<div class="form-group">
-			    					<input type="text" class="form-control" placeholder="Last Name" name='lName'>
+			    					<input type="text" class="form-control" placeholder="Last Name" name='lName' required>
 			    				</div>
 		    				</div>
 		    				<div class="">
@@ -183,20 +183,22 @@
 			              </div>
 			    				</div>
 		    					<div class="form-group">
-			    					<input type="text" class="form-control" placeholder="Phone" name= "phone">
+			    					<input type="number" class="form-control" placeholder="Phone" name= "phone" required  maxlength:10 >
+			    				
+			    				
 			    				</div>
 		    				</div>
 		    				<div class="">
 			    				<div class="form-group">
 			    					<div class="input-wrap">
 			            		<div class="icon"><span class="ion-md-calendar"></span></div>
-			            		<input type="text" class="form-control appointment_date" placeholder="Date" name="date">
+			            		<input type="date" class="form-control appointment_date" placeholder="Date" name="date" required>
 		            		</div>
 			    				</div>
 			    				<div class="form-group">
 			    					<div class="input-wrap">
 			            		<div class="icon"><span class="ion-ios-clock"></span></div>
-			            		<input type="text" class="form-control appointment_time" placeholder="Time" name= "time">
+			            		<input type="time" class="form-control appointment_time" placeholder="Time" name= "time" required>
 		            		</div>
 			    				</div>
 		    				</div>
@@ -224,9 +226,7 @@
           
   Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | SLIIT <i class="icon-heart color-danger" aria-hidden="true"></i> 
  
-          </div>
-        </div>
-      </div>
+
     </footer>
     
   

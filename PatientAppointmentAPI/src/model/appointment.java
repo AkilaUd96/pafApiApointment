@@ -21,7 +21,7 @@ public class appointment {
 				return con;
 			}
 
-			public String insertItem(String fName, String lName, String type, String phone,String date, String time,String messege) {
+			public String insertItem( String fName, String lName, String type, String phone,String date, String time,String messege) {
 				String output = "";
 				try {
 					Connection con = connect();

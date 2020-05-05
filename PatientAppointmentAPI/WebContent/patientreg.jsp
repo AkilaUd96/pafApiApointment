@@ -114,7 +114,7 @@
 							<div class="name">Patient Code</div>
 							<div class="value">
 								<div class="input-group">
-									<input class="input--style-5" type="text" name="Pcode">
+									<input class="input--style-5" type="text" name="Pcode" required>
 
 								</div>
 							</div>
@@ -123,7 +123,7 @@
 							<div class="name">Name</div>
 							<div class="value">
 								<div class="input-group">
-									<input class="input--style-5" type="text" name="PName">
+									<input class="input--style-5" type="text" name="PName" required>
 								</div>
 							</div>
 						</div>
@@ -132,7 +132,7 @@
 							<div class="name">NIC Number</div>
 							<div class="value">
 								<div class="input-group">
-									<input class="input--style-5" type="text" name="PNIC">
+									<input class="input--style-5" type="text" name="PNIC" required size="10">
 								</div>
 							</div>
 						</div>
