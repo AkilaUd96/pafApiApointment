@@ -11,7 +11,8 @@
      <url-pattern>/appointmentService/*</url-pattern>
         <url-pattern>/aRedirectUpdate/*</url-pattern>
            <url-pattern>/pRedirectUpdate/*</url-pattern>
-   
+    <url-pattern>/appointment/*</url-pattern>
+    <url-pattern>/PatientRegister/*</url-pattern>
   </servlet-mapping>
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>

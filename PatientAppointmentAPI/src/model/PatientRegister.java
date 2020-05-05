@@ -85,7 +85,7 @@ public class PatientRegister {
 						output += "<td>" + Address + "</td>";
 						output += "<td>" + Password + "</td>";
 						// buttons
-						output += "<td><button type=\"button\" class=\"btn update_btn btn-primary\" data-toggle=\"modal\" data-target=\"#myModal\" data-id=\"" + PID + "\" data-todo='{\"Pcode\":\""+ Pcode+ "\","
+						output += "<td><button type=\"button\" class=\"btn update_btn btn-primary\" data-toggle=\"modal\" data-target=\"#exampleModal\" data-id=\"" + PID + "\" data-todo='{\"Pcode\":\""+ Pcode+ "\","
 								+ "\"PName\":\""+PName+ "\",\"PNIC\":\""+ PNIC+ "\",\"PhoneNo\":\""+ PhoneNo + "\",\"Email\":\""+ Email+ "\",\"Address\":\""+ Address+ "\",\"Password\":\""+ Password+ "\"}'>Update</button></td>"
 								+ "<td><form method=\"post\" action=\"patientdet.jsp\">"
 								+ "<input name=\"btnRemove\" type=\"submit\" value=\"Remove\"class=\"btn btn-danger\">"

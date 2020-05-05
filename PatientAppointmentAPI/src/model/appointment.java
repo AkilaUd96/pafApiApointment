@@ -86,7 +86,7 @@ public class appointment {
 						output += "<td>" + messege + "</td>";
 						// buttons
 						System.out.println("working");
-						output += "<td><button type=\"button\" class=\"btn update_btn btn-primary\" data-toggle=\"modal\" data-target=\"#myModal\" data-id=\"" + AID + "\" data-todo='{\"fName\":\""+ fName+ "\","
+						output += "<td><button type=\"button\" class=\"btn update_btn btn-primary\" data-toggle=\"modal\" data-target=\"#exModal\" data-id=\"" + AID + "\" data-todo='{\"fName\":\""+ fName+ "\","
 								+ "\"lName\":\""+lName+ "\",\"type\":\""+ type+ "\",\"phone\":\""+ phone + "\",\"date\":\""+ date+ "\",\"time\":\""+ time+ "\",\"messege\":\""+ messege+ "\"}'>Update</button></td>"
 								+ "<td><form method=\"post\" action=\"appointmentdet.jsp\">"
 								+ "<input name=\"btnRemove\" type=\"submit\" value=\"Remove\"class=\"btn btn-danger\">"

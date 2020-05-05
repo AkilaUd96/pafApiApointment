@@ -39,7 +39,7 @@ public class Logincheck extends HttpServlet {
 		String uid=request.getParameter("id");
 		String password=request.getParameter("pass");
 		System.out.println(request);
-		if(uid.equals("123")&&password.equals("123")) {
+		if(uid.equals("AID")&&password.equals("")) {
 			response.sendRedirect("PatientMain.jsp");
 			return;
 		}else {
