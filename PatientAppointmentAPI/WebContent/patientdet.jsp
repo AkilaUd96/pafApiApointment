@@ -23,6 +23,7 @@ if (request.getParameter("PID") != null) {
 <!DOCTYPE html>
 <html>
 <head>
+<title>Patient details</title>
 <meta charset="ISO-8859-1">
  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 

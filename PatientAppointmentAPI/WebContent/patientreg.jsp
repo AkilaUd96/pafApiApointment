@@ -24,7 +24,7 @@
 <link rel="stylesheet" href="css/style.css">
 
 <!-- Title Page-->
-<title>Doctor registration</title>
+<title>Patient registration</title>
 
 <!-- Icons font CSS-->
 <link href="vendor/mdi-font/css/material-design-iconic-font.min.css"
@@ -132,7 +132,7 @@
 							<div class="name">NIC Number</div>
 							<div class="value">
 								<div class="input-group">
-									<input class="input--style-5" type="text" name="PNIC" required size="10">
+									<input class="input--style-5" type="text" name="PNIC" required >
 								</div>
 							</div>
 						</div>
@@ -142,7 +142,7 @@
 								<div class="row row-refine">
 									<div class="col-9">
 										<div class="input-group-desc">
-											<input class="input--style-5" type="text" name="PhoneNo">
+											<input class="input--style-5" type="number" name="PhoneNo" required >
 
 										</div>
 									</div>
@@ -154,7 +154,7 @@
 							<div class="name">Email</div>
 							<div class="value">
 								<div class="input-group">
-									<input class="input--style-5" type="email" name="Email">
+									<input class="input--style-5" type="email" name="Email" required="required">
 								</div>
 							</div>
 						</div>
@@ -163,7 +163,7 @@
 							<div class="name">Address</div>
 							<div class="value">
 								<div class="input-group">
-									<input class="input--style-5" type="text" name="Address">
+									<input class="input--style-5" type="text" name="Address" required="required">
 								</div>
 							</div>
 						</div>
@@ -189,6 +189,7 @@
 					</form>
 					<%
 						out.print(session.getAttribute("statusMsg"));
+					
 					%>
 					<br>
 
