@@ -171,16 +171,25 @@
 			    					<div class="form-field">
 	          					<div class="select-wrap">
 	                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-	                      <select name="type" id="type" class="form-control">
-	                      	<option value="">Select Your Services</option>
-	                        <option value="">Neurology</option>
-	                        <option value="">Cardiology</option>
-	                        <option value="">Dental</option>
-	                        <option value="">Ophthalmology</option>
-	                        <option value="">Other Services</option>
+	                     
+								 <select name="type" id="type_form" class="form-control">
+	                      	<option value="1"  >Select Your Services</option>
+	                        <option value= 'Neurology'>'Neurology'>Neurology</option>
+	                        <option value= 'Cardiology'>Cardiology</option>
+	                        <option value= 'Dental'>Dental</option>
+	                        <option value= 'Ophthalmology'>Ophthalmology</option>
+	                        <option value= 'Other Services'>Other Services</option>
 	                      </select>
 	                    </div>
 			              </div>
+			              <script>
+    $(function() {
+          $("#type").change(function(){
+          var option = $('option:selected', this).attr('type');
+          $('#type').val(option);
+       });
+    });
+</script>
 			    				</div>
 		    					<div class="form-group">
 			    					<input type="number" class="form-control" placeholder="Phone" name= "phone" required   >

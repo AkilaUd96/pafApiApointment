@@ -139,19 +139,28 @@ if (request.getParameter("AID") != null) {
 					
 
 						
-							
+							<script type="text/javascript" src="jquery.js"></script>
+
+<script>
+    $(function() {
+          $("#type").change(function(){
+          var option = $('option:selected', this).attr('type');
+          $('#type').val(option);
+       });
+    });
+</script>
 								
 						
 							<div class="name">Type</div>
 							
 											
 											 <select name="type" id="type_form" class="form-control">
-	                      	<option value="">Select Your Services</option>
-	                        <option value="">Neurology</option>
-	                        <option value="">Cardiology</option>
-	                        <option value="">Dental</option>
-	                        <option value="">Ophthalmology</option>
-	                        <option value="">Other Services</option>
+	                      	<option value="1">Select Your Services</option>
+	                        <option value="2">Neurology</option>
+	                        <option value="3">Cardiology</option>
+	                        <option value="4">Dental</option>
+	                        <option value="5">Ophthalmology</option>
+	                        <option value="6">Other Services</option>
 	                      </select>
 
 							<div class="name">Phone</div>
