@@ -112,7 +112,7 @@ public class appointment {
 						return "Error while connecting to the database for updating.";
 					}
 					// create a prepared statement
-					String query = "UPDATE patient SET Pcode=?,PName=?,PNIC=?,PhoneNo=?,Email=?,Address=?,Password=?WHERE AID=?";
+					String query = "UPDATE appointment SET fName=?,lName=?,type=?,phone=?,date=?,time=?,messege=?WHERE AID=?";
 					PreparedStatement preparedStmt = con.prepareStatement(query);
 					// binding values
 					preparedStmt.setString(1, fName);

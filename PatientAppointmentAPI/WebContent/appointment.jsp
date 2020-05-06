@@ -183,7 +183,7 @@
 			              </div>
 			    				</div>
 		    					<div class="form-group">
-			    					<input type="number" class="form-control" placeholder="Phone" name= "phone" required  maxlength:10 >
+			    					<input type="number" class="form-control" placeholder="Phone" name= "phone" required   >
 			    				
 			    				
 			    				</div>
